@@ -92,7 +92,7 @@ h2{
 .characteristic_numeric{
     margin-right: 6vw;
     margin-left: 6vw;
-    font-size:1vw;
+    font-size:2vh;
 }
 .line_80{
     height: 1px;
@@ -149,7 +149,8 @@ h2{
 #edition_more_button{
     height: 60%;
     font-size:3vh;
-    width:15%
+    width:15%;
+    background-color: white;
 }
 .edition_elem:hover{
     background-color: orange;
@@ -167,6 +168,7 @@ h2{
 .pre_tech_char{
     margin-top: 10vh;
     font-size: 4vh;
+    min-font-size: 20px;
     font-style:italic;
     font-family: "Times New Roman", sans-serif;
     margin-left: -20vw;
@@ -186,7 +188,7 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    font-size: 1vw;
+    font-size: 2vh;
 }
 .footer{
     background-color: whitesmoke;
@@ -203,7 +205,9 @@ h2{
     font-size:2vh;
     font-family: "Times New Roman", sans-serif;
 }
-
+.tiugan_photo{
+    width: 100%;
+}
 @keyframes slidein {
     from {
         color: #FFFFFF;
@@ -211,4 +215,77 @@ h2{
     to {
         color: #000000;
     }
+}
+
+@media screen and (max-width: 870px) {
+    body{
+        margin:0;
+    }
+    .footer{
+        height: 60vh;
+    }
+    .footer_grid{
+        margin-top:0;
+        grid-template-rows: repeat(2,25vh);
+        grid-template-columns: repeat(2,50vw);
+    }
+    .footer_elem{
+        font-size: 3vh;
+    }
+    .edition_sidebar{
+        margin-bottom: 15vh;
+        display: grid;
+        grid-template-rows: repeat(2,10vh);
+        grid-template-columns: repeat(2,40vw);
+    }
+    #edition_more_button{
+        width: 40vw;
+    }
+    .characteristic_sidebar{
+        margin-bottom: 10vh;
+        display: grid;
+        grid-template-rows: repeat(2,10vh);
+        grid-template-columns: repeat(2,40vw);
+    }
+    .tech_char_elem{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 560px) {
+    body{
+        margin:0;
+    }
+    .footer{
+        height: 110vh;
+    }
+    .footer_grid{
+        margin-top:0;
+        grid-template-rows: repeat(4,25vh);
+        grid-template-columns: repeat(1,100vw);
+    }
+    .footer_elem{
+        font-size: 3vh;
+    }
+    .edition_sidebar{
+        margin-bottom: 15vh;
+        display: grid;
+        grid-template-rows: repeat(2,10vh);
+        grid-template-columns: repeat(2,40vw);
+    }
+    #edition_more_button{
+        width: 40vw;
+    }
+    .characteristic_sidebar{
+        margin-bottom: 10vh;
+    }
+    .name{
+        margin-top: 0;
+    }
+    .characteristics{
+        margin-top: 10vh;
+    }
+    .technical_characteristics{
+        grid-template-rows: repeat(8,8vh);
+    }
+
 }
