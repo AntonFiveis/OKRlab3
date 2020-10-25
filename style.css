@@ -24,7 +24,6 @@ body{
 }
 .button{
     width: 9%;
-    max-height: 30px;
     margin-right: 1%;
     border:none;
     border-radius: 5px;
@@ -35,6 +34,7 @@ body{
 }
 #login_button{
     height: 60%;
+    max-height: 30px;
 }
 .button:hover{
     background-color: orange;
@@ -109,7 +109,6 @@ h2{
     margin-top: -6vh;
     margin-bottom: 6vh;
     margin-left: 10vw;
-    font-weight: bold;
     font-style:italic;
     z-index:1;
     font-size:7vh;
@@ -143,8 +142,14 @@ h2{
 .edition_sidebar{
     height:15vh;
 }
+.tiugan_photo{
+    margin-top: 7vh;
+
+}
 #edition_more_button{
-    height: 80%;
+    height: 60%;
+    font-size:3vh;
+    width:15%
 }
 .edition_elem:hover{
     background-color: orange;
@@ -162,10 +167,12 @@ h2{
 .pre_tech_char{
     margin-top: 10vh;
     font-size: 4vh;
-    font-weight: bold;
     font-style:italic;
     font-family: "Times New Roman", sans-serif;
     margin-left: -20vw;
+}
+.bold{
+    font-weight: bold;
 }
 
 .technical_characteristics{
@@ -180,6 +187,21 @@ h2{
     flex-direction: column;
     justify-content: flex-end;
     font-size: 1vw;
+}
+.footer{
+    background-color: whitesmoke;
+}
+.footer_grid{
+    display: grid;
+    grid-template-columns: repeat(4,25vw);
+    grid-template-rows: repeat(1,20vh);
+}
+.footer_div_elem{
+    margin:20%
+}
+.footer_elem{
+    font-size:2vh;
+    font-family: "Times New Roman", sans-serif;
 }
 
 @keyframes slidein {
