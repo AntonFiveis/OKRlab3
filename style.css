@@ -4,8 +4,7 @@ body{
 
 
 .sidebar{
-    height: 7vh;
-    min-height: 35px;
+    height: 50px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -27,7 +26,7 @@ body{
     margin-right: 1%;
     border:none;
     border-radius: 5px;
-    font-size:2vh;
+    font-size:15px;
     font-family:  Arial,sans-serif;
     min-width: 110px;
     cursor: pointer;
@@ -72,8 +71,8 @@ h2{
 }
 .main_image{
     position: relative;
-    margin-top:-30vh;
-    margin-bottom: -35vh;
+    margin-top:-100px;
+    margin-bottom:-100px;
     width: 100%;
     z-index: 0;
 }
@@ -92,7 +91,7 @@ h2{
 .characteristic_numeric{
     margin-right: 6vw;
     margin-left: 6vw;
-    font-size:2vh;
+    font-size:15px;
 }
 .line_80{
     height: 1px;
@@ -106,19 +105,19 @@ h2{
 }
 .name{
     position: relative;
-    margin-top: -6vh;
-    margin-bottom: 6vh;
+    margin-top: -40px;
+    margin-bottom: 40px;
     margin-left: 10vw;
     font-style:italic;
     z-index:1;
-    font-size:7vh;
+    font-size:50px;
     color: white;
 }
 .predescription{
     margin-top:20px;
     margin-left: 20%;
     margin-right: 20%;
-    font-size:4vh;
+    font-size:25px;
     font-family: "Times New Roman", sans-serif;
 
 }
@@ -126,7 +125,7 @@ h2{
 
 .description{
     margin: 40px 20%;
-    font-size:2vh;
+    font-size:18px;
     font-family: "Times New Roman", sans-serif;
 }
 .container{
@@ -135,20 +134,20 @@ h2{
 .edition_elem{
     padding:1vw;
     margin:3vw;
-    font-size:3vh;
+    font-size:18px;
     border-radius: 5px;
     transition: background-color 0.5s linear;
 }
 .edition_sidebar{
-    height:15vh;
+    height:90px;
 }
 .tiugan_photo{
-    margin-top: 7vh;
+    margin-top: 50px;
 
 }
 #edition_more_button{
     height: 60%;
-    font-size:3vh;
+    font-size:18px;
     width:15%;
     background-color: white;
 }
@@ -158,7 +157,7 @@ h2{
 }
 .selected{
     background-color: cornflowerblue;
-    font-size:3.5vh;
+    font-size:22px;
 }
 .run-animation{
     animation-duration: 3s;
@@ -166,9 +165,8 @@ h2{
 }
 
 .pre_tech_char{
-    margin-top: 10vh;
-    font-size: 4vh;
-    min-font-size: 20px;
+    margin-top: 60px;
+    font-size: 30px;
     font-style:italic;
     font-family: "Times New Roman", sans-serif;
     margin-left: -20vw;
@@ -179,7 +177,7 @@ h2{
 
 .technical_characteristics{
     display: grid;
-    grid-template-rows: repeat(8,6vh);
+    grid-template-rows: repeat(8,50px);
     grid-template-columns: repeat(5,15vw);
     grid-gap: 2vw;
     margin: 100px;
@@ -188,7 +186,7 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    font-size: 2vh;
+    font-size: 15px;
 }
 .footer{
     background-color: whitesmoke;
@@ -196,13 +194,13 @@ h2{
 .footer_grid{
     display: grid;
     grid-template-columns: repeat(4,25vw);
-    grid-template-rows: repeat(1,20vh);
+    grid-template-rows: repeat(1,120px);
 }
 .footer_div_elem{
-    margin:20%
+    margin:10%
 }
 .footer_elem{
-    font-size:2vh;
+    font-size:14px;
     font-family: "Times New Roman", sans-serif;
 }
 .tiugan_photo{
@@ -218,74 +216,77 @@ h2{
 }
 
 @media screen and (max-width: 870px) {
+    #login_button{
+        font-size: 13px;
+    }
     body{
         margin:0;
     }
     .footer{
-        height: 60vh;
+        height: 300px;
     }
     .footer_grid{
         margin-top:0;
-        grid-template-rows: repeat(2,25vh);
+        grid-template-rows: repeat(2,100px);
         grid-template-columns: repeat(2,50vw);
     }
-    .footer_elem{
-        font-size: 3vh;
-    }
     .edition_sidebar{
-        margin-bottom: 15vh;
+        margin-bottom: 100px;
         display: grid;
-        grid-template-rows: repeat(2,10vh);
+        grid-template-rows: repeat(2,80px);
         grid-template-columns: repeat(2,40vw);
     }
     #edition_more_button{
         width: 40vw;
     }
     .characteristic_sidebar{
-        margin-bottom: 10vh;
+        margin-top: 20px;
+        margin-bottom: 90px;
         display: grid;
-        grid-template-rows: repeat(2,10vh);
+        grid-template-rows: repeat(2,80px);
         grid-template-columns: repeat(2,40vw);
+
     }
+
     .tech_char_elem{
-        font-size: 10px;
+        font-size: 12px;
     }
+
 }
 @media screen and (max-width: 560px) {
     body{
         margin:0;
     }
     .footer{
-        height: 110vh;
+        height:800px;
     }
     .footer_grid{
         margin-top:0;
-        grid-template-rows: repeat(4,25vh);
+        grid-template-rows: repeat(4,180px);
         grid-template-columns: repeat(1,100vw);
     }
     .footer_elem{
-        font-size: 3vh;
+        font-size: 20px;
     }
     .edition_sidebar{
-        margin-bottom: 15vh;
+        margin-bottom: 220px;
         display: grid;
-        grid-template-rows: repeat(2,10vh);
-        grid-template-columns: repeat(2,40vw);
+        grid-template-rows: repeat(4,80px);
+        grid-template-columns: repeat(1,80vw);
     }
     #edition_more_button{
-        width: 40vw;
-    }
-    .characteristic_sidebar{
-        margin-bottom: 10vh;
-    }
-    .name{
-        margin-top: 0;
+        width: 100%;
     }
     .characteristics{
-        margin-top: 10vh;
+        margin-top: 0;
     }
     .technical_characteristics{
-        grid-template-rows: repeat(8,8vh);
+        grid-template-rows: repeat(8,50px);
     }
-
+    .edition_elem{
+        text-align: center;
+    }
+    .characteristic_sidebar{
+        margin-top: 10px;
+    }
 }
